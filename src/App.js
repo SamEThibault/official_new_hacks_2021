@@ -39,16 +39,16 @@ function App() {
               {/* <Route path="*" element={<PageNotFound/>} /> */}
               <Route path="chemistry" element={<Category title="Chemistry" topics={["Organic", "Stoichiometry"]}/>}/>
               <Route path="physics" element={<Category title="Physics" topics={["Thermodynamics", "Kinematics"]}/>}/>
-              <Route path="biology" element={<Category title="Biology" topics={["Human Body", "Frogs"]}/>}/>
+              <Route path="biology" element={<Category title="Biology" topics={["Human Body", "Anatomy"]}/>}/>
               <Route path="history" element={<Category title="History" topics={["World War II", "Genocide"]}/>}/>
-              <Route path="organic" element={<TopicNote/>}/>
-              <Route path="stoichiometry" element={<TopicNote/>}/>
-              <Route path="thermodynamics" element={<TopicNote/>}/>
-              <Route path="kinematics" element={<TopicNote/>}/>
-              <Route path="humanbody" element={<TopicNote/>}/>
-              <Route path="frogs" element={<TopicNote/>}/>
-              <Route path="worldwarii" element={<TopicNote/>}/>
-              <Route path="genocide" element={<TopicNote/>}/>
+              <Route path="chemistry/organic" element={<TopicNote/>}/>
+              <Route path="chemistry/stoichiometry" element={<TopicNote/>}/>
+              <Route path="physics/thermodynamics" element={<TopicNote/>}/>
+              <Route path="physics/kinematics" element={<TopicNote/>}/>
+              <Route path="biology/human%20body" element={<TopicNote/>}/>
+              <Route path="biology/anatomy" element={<TopicNote/>}/>
+              <Route path="history/world%20war%20ii" element={<TopicNote/>}/>
+              <Route path="history/genocide" element={<TopicNote/>}/>
 
             </Routes>
           </AuthProvider>
