@@ -33,16 +33,15 @@ async function handleSubmit(e){
     setLoading(false)
 }
 
-
     return (
         <>
-            <Card>
-                <Card.Body>
+            <Card className ="m-auto align-self-center" style={{maxWidth: 500}}>
+                <Card.Body className ="m-auto align-self-center" style={{width: 370}}>
                     <h2 className="text-center mb-4"> Sign Up</h2>
                    {currentUser && currentUser.password}
                     {error && <Alert variant="danger"> {error}</Alert>}
                     <Form onSubmit = {handleSubmit}>
-                        <Form.Group id="email">
+                        <Form.Group  id="email">
                             <Form.Label>Email</Form.Label>
                             <Form.Control type = "email" ref={emailRef} required />
                         </Form.Group>
@@ -62,6 +61,7 @@ async function handleSubmit(e){
                 Already have an account? <Link to="/login">Log In</Link>
 
             </div>
+
         </>
     )
 }
