@@ -14,13 +14,13 @@ const useStyles = makeStyles({
         color: qColors.blue,
         fontWeight: 'bold',
         '&:hover': {
-            background: qColors.red,
+            backgroundColor: qColors.red,
             textDecoration: 'none',
             color: qColors.red,
                 fontWeight: 'bold',
         },
         '&:active': {
-            background: qColors.red,
+            backgroundColor: qColors.red,
             textDecoration: 'none',
             color: qColors.gold,
             fontWeight: 'bold',
