@@ -2,26 +2,37 @@ import React from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom';
 import { qColors } from '../styles/colors.js'
+import { makeStyles} from '@material-ui/core';
+import { withTheme } from '@emotion/react';
 
+    const useStyles = makeStyles({
+        link: {
+            color: qColors.blue,
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            fontSize: 20,
+            '&:hover': {
+                color: 'white',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                fontSize: 20,
+            }
+        },
+    })
 function Nav() {
 
-  const navStyle = {
-    color: qColors.blue,
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    fontSize: 20,
-  }
+    const classes = useStyles()
   return (
     <nav style={{background: qColors.gold}}>
         <h1 style={{color: qColors.red}}>HLSK NoteHack</h1>
         <ul className="nav-links">
-            <Link style={navStyle} to='/home'>
+            <Link className={classes.link} to='/home'>
             <li>Home</li>
             </Link>
-            <Link style={navStyle} to='/discussion'>
+            <Link className={classes.link} to='/discussion'>
             <li>Discussion</li>
             </Link>
-            <Link style={navStyle} to='/'>
+            <Link className={classes.link} to='/'>
             <li>Logout</li>
             </Link>
         </ul>
