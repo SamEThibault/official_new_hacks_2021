@@ -1,33 +1,37 @@
 import React, { useEffect } from "react";
 import './App.css';
 import Home from "./views/Home";
-import Discussion from "./views/Discussion";
 import Signup from "./components/Signup"
-import Nav from "./views/Nav";
-import NoteUpload from "./components/NoteUpload";
-import Category from "./components/Category";
-import TopicNote from "./components/TopicNote";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Container} from 'react-bootstrap'
+import { AuthProvider } from './contexts/AuthContext';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Login from './components/Login'
+
 
 function App() {
-  useEffect(() => {
-    
-  }, [])
+  console.log(process.env.REACT_APP_FIREBASE_API_KEY);
+
+  // const db = firebase.firestore().collection("");
+  // console.log("HI");
+
+  console.log("ASFJSFLKJASFL:K");
+
   return (
-    <Router>
-      <div className="App">
-        <Nav />
-        {/* <Category title="physics" topics={["Kinematics","Harmonics", "Quantum Physics"]}/> */}
-        <TopicNote/>
-        {/* <NoteUpload/> */}
-        {/* <Routes>
-          <Route path="/" element={<Signup />} />
-          <Route path="home" element={<Home />} />
-          <Route path="study" element={<NoteUpload />} />
-          <Route path="discussion" element={<Discussion />} />
-        </Routes>  */}
+    <Container className = "d-flex align-itmes-center
+    justify-content-center"
+      style ={{minheight: "100vh"}}>
+      <div className = "w-100" style={{maxWidth: '400px '}}>
+        <Router>
+          <AuthProvider>
+            <Routes>
+              <Route path ="/signup" component={Signup}/>
+            </Routes>
+          </AuthProvider>
+        </Router>
       </div>
-    </Router>
+
+    </Container>
+    
   );
 }
 
