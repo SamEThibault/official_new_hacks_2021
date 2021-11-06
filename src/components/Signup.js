@@ -1,9 +1,5 @@
 import React, { useRef} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
-<<<<<<< HEAD
-import NavSignup from '../views/NavSignup'
-=======
->>>>>>> 2c33890 (Made the pages for the notes)
 
 function Signup() {
 
@@ -13,21 +9,13 @@ const passwordConfirmRef = useRef()
 
     return (
         <>
-<<<<<<< HEAD
-        <NavSignup/>
-=======
->>>>>>> 2c33890 (Made the pages for the notes)
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4"> Sign Up</h2>
                     <Form>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-<<<<<<< HEAD
-                            <Form.Control type = "email" placeholder = "user@gmail.com" style={{textAlign: 'center'}} ref={emailRef} required />
-=======
                             <Form.Control type = "email" ref={emailRef} required />
->>>>>>> 2c33890 (Made the pages for the notes)
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>

@@ -1,20 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import "../styles/discussion.css";
-<<<<<<< HEAD
-import Nav from './Nav.jsx'
-
-function discussion() {
-    return (
-        <div className="NewPostBtn">
-            <Nav/>
-            <h1>Discussion Board</h1>
-            <Button
-                size="large"
-                variant="contained"
-                style={{background: "darkred"}}
-                >Post</Button>
-=======
 
 function discussion() {
     return (
@@ -42,7 +28,6 @@ function discussion() {
                     }}
                 >Type your message here... </textarea>
             </div>
->>>>>>> 2c33890 (Made the pages for the notes)
         </div>
     );
 }

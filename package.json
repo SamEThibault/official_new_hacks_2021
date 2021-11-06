@@ -10,11 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.1",
-<<<<<<< HEAD
     "firebase": "^8.7.0",
-=======
-    "firebase": "^8.10.0",
->>>>>>> 2c33890 (Made the pages for the notes)
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.4",
     "react-bootstrap-validation": "^0.1.11",
