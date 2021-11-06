@@ -12,8 +12,7 @@ function PageNotFound() {
                 <div id="info">
                     <h1 style={{marginTop:80, fontSize: 60}}>404</h1>
                     <h3>This page could not be found</h3>
-                    <p>The page you are looking for does not exist.</p>
-                    <p>Please go back</p>
+                    <p>The page you are looking for does not exist.<br />Please go back</p>
                 </div>
         </div>
     );

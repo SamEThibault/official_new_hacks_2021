@@ -8,6 +8,7 @@ import NoteUpload from "./components/NoteUpload";
 import Category from "./components/Category";
 import TopicNote from "./components/TopicNote";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PageNotFound from "./views/404-page";
 
 function App() {
   useEffect(() => {
@@ -16,16 +17,17 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Nav />
+        
         {/* <Category title="physics" topics={["Kinematics","Harmonics", "Quantum Physics"]}/> */}
-        <TopicNote/>
+        {/* <TopicNote/> */}
         {/* <NoteUpload/> */}
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<Signup />} />
           <Route path="home" element={<Home />} />
           <Route path="study" element={<NoteUpload />} />
           <Route path="discussion" element={<Discussion />} />
-        </Routes>  */}
+          <Route path="*" element={<PageNotFound/>} />
+        </Routes> 
       </div>
     </Router>
   );
