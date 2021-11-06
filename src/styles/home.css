@@ -1,0 +1,27 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 90vh;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  padding: 2em;
+}
+.subject-catelog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.subject-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
