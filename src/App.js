@@ -8,8 +8,7 @@ import NoteUpload from "./components/NoteUpload";
 import Category from "./components/Category";
 import TopicNote from "./components/TopicNote";
 import PageNotFound from "./views/404-page";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Signup from "./components/Signup"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';g
 import { Container} from 'react-bootstrap'
 import { AuthProvider } from './contexts/AuthContext';
 import Login from './components/Login'
