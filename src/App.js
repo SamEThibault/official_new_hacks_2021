@@ -16,9 +16,7 @@ import Dashboard from './components/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 
 function App() {
-  useEffect(() => {
-    
-  }, [])
+
   return (
     <Container className = "d-flex align-itmes-center
     justify-content-center"
