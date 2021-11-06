@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import tempPdf from "../assets/Note_Nov_6_2021.pdf";
 import NoteUpload from "./NoteUpload";
 import "../styles/topicNote.css";
 function TopicNote() {
+  const [newNote, setNewNote] = useState(false);
   const noteData = [
     { name: "Kevin", img: "Photo here pelase", message: "HI" },
     { name: "Logan", img: "PLEAS BRO", message: "ITS ME" },
@@ -21,7 +22,29 @@ function TopicNote() {
             <p>Download</p>
           </div>
         ))}
-        <NoteUpload />
+
+        {newNote ? (
+          <>
+            <NoteUpload />
+            <div
+              className="new-note-icon"
+              onClick={() => {
+                setNewNote(!newNote);
+              }}
+            >
+              New Note
+            </div>
+          </>
+        ) : (
+          <div
+            className="new-note-icon"
+            onClick={() => {
+              setNewNote(!newNote);
+            }}
+          >
+            New Note
+          </div>
+        )}
       </div>
     </div>
   );
