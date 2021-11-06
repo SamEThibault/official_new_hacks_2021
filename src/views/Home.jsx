@@ -2,33 +2,74 @@ import React from "react";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import "../styles/home.css";
-function home() {
+import {Link} from 'react-router-dom';
+import { qColors } from '../styles/colors.js'
+import Nav from "./Nav";
+import { makeStyles, ThemeProvider, createTheme } from '@material-ui/core';
+
+const useStyles = makeStyles({
+    button: {
+        backgroundColor: qColors.red,
+        textDecoration: 'none',
+        color: qColors.blue,
+        fontWeight: 'bold',
+        '&:hover': {
+            background: qColors.red,
+            textDecoration: 'none',
+            color: qColors.red,
+                fontWeight: 'bold',
+        },
+        '&:active': {
+            background: qColors.red,
+            textDecoration: 'none',
+            color: qColors.gold,
+            fontWeight: 'bold',
+        }
+    },
+})
+function Home() {
+
+  const classes = useStyles()
   return (
-    <div className="home-container">
-      <Card className="card-container subject-catelog">
+    <div className="App">
+      <Nav />
+    <div className="home-container" style={{background: qColors.blue}}>
+      <Card className="card-container subject-catelog" style={{background: qColors.gold}}>
         <div className="subject-containers">
           <h1>Chemistry</h1>
-          <Button variant="contained">Study Notes</Button>
+          <Link to="/chemistry" style={{textDecoration: 'none'}}>
+          <Button /*style={{background: qColors.red}}*/  className={classes.button} variant="contained">Study Notes</Button>
+          </Link>   
         </div>
         <div className="subject-containers">
           <h1>Physics</h1>
-          <Button variant="contained">Study Notes</Button>
+          <Link to="/physics" style={{textDecoration: 'none'}}>
+          <Button className={classes.button} variant="contained">Study Notes</Button>
+          </Link>
         </div>
         <div className="subject-containers">
           <h1>Biology</h1>
-          <Button variant="contained">Study Notes</Button>
+          <Link to="/biology" style={{textDecoration: 'none'}}>
+          <Button className={classes.button} variant="contained">Study Notes</Button>
+          </Link>
         </div>
         <div className="subject-containers">
           <h1>History</h1>
-          <Button variant="contained">Study Notes</Button>
+          <Link to="/history" style={{textDecoration: 'none'}}>
+          <Button className={classes.button} variant="contained">Study Notes</Button>
+          </Link>
         </div>
-        <div className="subject-containers">
+        {/* <div className="subject-containers">
           <h1>Discussion Board</h1>
-          <Button variant="contained">View Discussion</Button>
-        </div>
+          <Link to="/discussion" style={{textDecoration: 'none'}}>
+          <Button style={buttonStyle} variant="contained">Open Discussions</Button>
+          </Link>
+        </div> */}
       </Card>
+    </div>
     </div>
   );
 }
 
-export default home;
+
+export default Home;
