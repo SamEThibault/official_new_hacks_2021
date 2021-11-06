@@ -1,6 +1,7 @@
 import React, { useRef, useState} from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import {useAuth} from '../contexts/AuthContext'
+import { Link } from 'react-router-dom'
 
 function Signup() {
 
@@ -55,7 +56,7 @@ async function handleSubmit(e){
                 </Card.Body>
             </Card>
             <div className="w-100 text-center mt-2">
-                Already have an account? Log In
+                Already have an account? <Link to="/login">Log In</Link>
 
             </div>
         </>
