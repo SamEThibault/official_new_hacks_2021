@@ -34,7 +34,7 @@ function Home() {
     
     <div className="App">
       <Nav />
-    <div className="home-container" style={{background: 'qColors.blue'}}>
+    <div className="home-container" style={{background: qColors.blue}}>
       <Card className="card-container subject-catelog" style={{background: qColors.gold}}>
         <div className="subject-containers">
           <h1>Chemistry</h1>
