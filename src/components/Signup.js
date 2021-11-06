@@ -1,5 +1,6 @@
 import React, { useRef} from 'react'
 import { Form, Button, Card } from 'react-bootstrap'
+import NavSignup from '../views/NavSignup'
 
 function Signup() {
 
@@ -9,6 +10,7 @@ const passwordConfirmRef = useRef()
 
     return (
         <>
+            <NavSignup/>
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4"> Sign Up</h2>

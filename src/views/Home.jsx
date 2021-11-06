@@ -31,6 +31,7 @@ function Home() {
 
   const classes = useStyles()
   return (
+    
     <div className="App">
       <Nav />
     <div className="home-container" style={{background: qColors.blue}}>

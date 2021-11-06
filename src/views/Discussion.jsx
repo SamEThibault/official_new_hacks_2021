@@ -1,10 +1,12 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import "../styles/discussion.css";
+import Nav from "../views/Nav"
 
 function discussion() {
     return (
         <div className="DiscussionMain">
+        <Nav/>
             <div className="NewPostBtn">
                 <h1>Discussion Board</h1>
                 <Button
