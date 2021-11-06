@@ -33,7 +33,6 @@ function Signup() {
         
     }
 
-
     return (
         <>
             <Card className ="m-auto align-self-center" style={{maxWidth: 500}}>
@@ -41,8 +40,10 @@ function Signup() {
                     <h2 className="text-center mb-4"> Sign Up</h2>
                     {currentUser && currentUser.password}
                     {error && <Alert variant="danger"> {error}</Alert>}
+
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
+
                             <Form.Label>Email</Form.Label>
                             <Form.Control type="email" ref={emailRef} required />
                         </Form.Group>
@@ -62,6 +63,7 @@ function Signup() {
                 Already have an account? <Link to="/login">Log In</Link>
 
             </div>
+
         </>
     )
 }
