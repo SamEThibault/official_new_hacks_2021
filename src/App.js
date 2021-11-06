@@ -22,9 +22,7 @@ function App() {
     
   }, [])
   return (
-    <Container className = "d-flex align-itmes-center justify-content-center"
-      style ={{minheight: "100vh"}}>
-      <div className = "w-100" style={{maxWidth: '400px '}}>
+    <div className="App">
         <Router>
           <AuthProvider>
             <Routes>
