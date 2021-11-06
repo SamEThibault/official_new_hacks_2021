@@ -6,7 +6,6 @@ import {Link} from 'react-router-dom';
 import { qColors } from '../styles/colors.js'
 import Nav from "./Nav";
 import { makeStyles} from '@material-ui/core';
-import { red } from "@mui/material/colors";
 
 const useStyles = makeStyles({
     button: {
@@ -39,7 +38,7 @@ function Home() {
         <div className="subject-containers">
           <h1>Chemistry</h1>
           <Link to="/chemistry" style={{textDecoration: 'none'}}>
-          <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">Study Notes</Button>
+          <Button /*style={{background: qColors.red}}*/  className={classes.button} variant="contained">Study Notes</Button>
           </Link>   
         </div>
         <div className="subject-containers">
