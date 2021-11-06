@@ -1,0 +1,15 @@
+.Header{
+    text-align: center;
+}   
+
+.DiscussionOutput{
+    margin-right: 50px;
+    float: right;
+    width: 600px;
+    height: 380px;
+  border: 5px solid #1f3a60;
+}
+
+.PostsHeader{
+    text-align: center;
+}
