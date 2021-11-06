@@ -24,12 +24,13 @@ function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            history("/")
+            history("/home")
         } catch {
             setError('Failed to create an account')
         }
 
         setLoading(false)
+        
     }
 
 
