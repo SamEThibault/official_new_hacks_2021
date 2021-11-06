@@ -25,3 +25,13 @@
     width:100%;
     min-height: 600px;
 }
+.new-note-icon{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: black;
+    color:white;
+    padding:1rem;
+    border-radius: 2rem;
+    cursor:pointer
+}
