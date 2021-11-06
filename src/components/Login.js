@@ -20,7 +20,7 @@ async function handleSubmit(e){
         setError('')
         setLoading(true)
         await login(emailRef.current.value,passwordRef.current.value)
-        history("/")
+        history("/home")
     } catch {
         setError('Failed to sign in')
     }
