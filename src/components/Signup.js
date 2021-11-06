@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
-import NavBar from './NavBar'
 
 function Signup() {
 
@@ -36,7 +35,6 @@ function Signup() {
 
     return (
         <>
-        <NavBar/>
             <Card className ="m-auto align-self-center" style={{maxWidth: 500}}>
                 <Card.Body className ="m-auto align-self-center" style={{width: 370}}>
                     <h2 className="text-center mb-4"> Sign Up</h2>
