@@ -1,15 +1,32 @@
+.DiscussionStyle{
+    Height: 100% !important;
+    Width: 100% !important;
+    padding: 5;
+}
+
 .Header{
-    text-align: center;
+    text-align: center !important;
 }   
 
 .DiscussionOutput{
-    margin-right: 50px;
-    float: right;
-    width: 600px;
-    height: 380px;
-  border: 5px solid #1f3a60;
+    margin-left : -50% !important;
+    width: 200% !important;
+    height: 300% !important;
+    text-align: center !important;
+  border: 5px solid #1f3a60 !important;
 }
 
 .PostsHeader{
-    text-align: center;
+    text-align: center !important;
+}
+
+.btn{
+    background: #edb220 !important;
+   margin-top: -21% !important;
+   margin-right: 50% !important;
+}
+
+.TxtBox{
+    width: 200% !important;
+    margin-left: -50% !important;
 }
