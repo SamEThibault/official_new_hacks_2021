@@ -15,6 +15,7 @@ import Dashboard from './components/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import topicNote from "./components/TopicNote"
 import Signup from './components/Signup'
+import NavBar from "./components/NavBar"
 
 function App() {
   useEffect(() => {

@@ -5,6 +5,7 @@ import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { qColors } from "../styles/colors.js";
 import Nav from "./Nav";
+import NavBar from "../components/NavBar"
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 
 const useStyles = makeStyles({
@@ -31,7 +32,7 @@ function Home() {
   const classes = useStyles();
   return (
     <div className="App">
-      <Nav />
+      <NavBar />
       <div className="home-container" style={{ background: qColors.blue }}>
         <Card className="card-container subject-catelog" style={{ background: qColors.gold }}>
           <div className="subject-containers">
