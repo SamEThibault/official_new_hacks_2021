@@ -1,9 +1,9 @@
 import './App.css';
 import Home from "./views/Home";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Signup from "./components/Signup"
 import { Container} from 'react-bootstrap'
 import { AuthProvider } from './contexts/AuthContext';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Login from './components/Login'
 
 
@@ -23,7 +23,8 @@ function App() {
         <Router>
           <AuthProvider>
             <Routes>
-              <Route path ="/signup" component={Signup}/>
+              <Route exact path ="signup" element={<Signup />}/>
+              <Route exact path ="login" element={<Login />}/>
             </Routes>
           </AuthProvider>
         </Router>
