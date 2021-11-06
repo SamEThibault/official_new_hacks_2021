@@ -1,0 +1,22 @@
+.topic-note-container{
+    min-height:100vh;
+}
+.note-taker-container{
+    border:solid 1px darkred;
+    margin:2em 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.note-taker-info{
+    width:90%;
+}
+.note-taker-notes{
+    max-height: 600px;
+    border:solid 1px black;
+}
+.note-taker-name{
+    text-align: center;
+}
