@@ -35,7 +35,7 @@ function App() {
               <Route exact path ="login" element={<Login />}/>
               <Route exact path="home" element={<PrivateRoute><Home /></PrivateRoute>}/>
               <Route path="study" element={<PrivateRoute><NoteUpload /></PrivateRoute>}/>
-              <Route path="discussion" element={<PrivateRoute><Discussion /></PrivateRoute>}/>
+              <Route exact path="discussion" element={<PrivateRoute><Discussion /></PrivateRoute>}/>
               {/* <Route path="*" element={<PageNotFound/>} /> */}
             </Routes>
           </AuthProvider>

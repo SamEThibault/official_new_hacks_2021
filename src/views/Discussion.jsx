@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import "../styles/discussion.css";
 import Nav from "../views/Nav";
 
-function discussion() {
+function Discussion() {
   return (
     <div className="DiscussionMain">
       <Nav />
@@ -38,4 +38,4 @@ function discussion() {
   );
 }
 
-export default discussion;
+export default Discussion;
