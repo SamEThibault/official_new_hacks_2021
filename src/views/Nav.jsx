@@ -3,7 +3,6 @@ import '../App.css';
 import {Link} from 'react-router-dom';
 import { qColors } from '../styles/colors.js'
 import { makeStyles} from '@material-ui/core';
-import { withTheme } from '@emotion/react';
 
     const useStyles = makeStyles({
         link: {
@@ -13,6 +12,12 @@ import { withTheme } from '@emotion/react';
             fontSize: 20,
             '&:hover': {
                 color: 'white',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+                fontSize: 20,
+            },
+            '&:active': {
+                color: qColors.red,
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 fontSize: 20,
