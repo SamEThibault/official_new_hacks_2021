@@ -2,6 +2,7 @@ import React from "react";
 import tempPdf from "../assets/Note_Nov_6_2021.pdf";
 import NoteUpload from "./NoteUpload";
 import "../styles/topicNote.css";
+import Nav from "../views/Nav"
 function TopicNote() {
   const noteData = [
     { name: "Kevin", img: "Photo here pelase", message: "HI" },
@@ -10,6 +11,7 @@ function TopicNote() {
   ];
   return (
     <div className="topic-note-container">
+      <Nav/>
       <div className="container">
         {noteData.map((note, key) => (
           <div className="note-taker-container">
