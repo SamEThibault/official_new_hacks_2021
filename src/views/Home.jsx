@@ -9,6 +9,7 @@ import NavBar from "../components/NavBar"
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 
 const useStyles = makeStyles({
+
   button: {
     backgroundColor: qColors.red,
     textDecoration: "none",
@@ -19,6 +20,7 @@ const useStyles = makeStyles({
       textDecoration: "none",
       color: qColors.red,
       fontWeight: "bold",
+
     },
     "&:active": {
       background: qColors.red,
