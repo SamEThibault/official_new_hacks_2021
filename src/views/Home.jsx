@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import "../styles/home.css";
+<<<<<<< HEAD
 import {Link} from 'react-router-dom';
 import { qColors } from '../styles/colors.js'
 import Nav from "./Nav";
@@ -55,4 +56,35 @@ function home() {
 }
 
 
+=======
+function home() {
+  return (
+    <div className="home-container">
+      <Card className="card-container subject-catelog">
+        <div className="subject-containers">
+          <h1>Chemistry</h1>
+          <Button variant="contained">Study Notes</Button>
+        </div>
+        <div className="subject-containers">
+          <h1>Physics</h1>
+          <Button variant="contained">Study Notes</Button>
+        </div>
+        <div className="subject-containers">
+          <h1>Biology</h1>
+          <Button variant="contained">Study Notes</Button>
+        </div>
+        <div className="subject-containers">
+          <h1>History</h1>
+          <Button variant="contained">Study Notes</Button>
+        </div>
+        <div className="subject-containers">
+          <h1>Discussion Board</h1>
+          <Button variant="contained">View Discussion</Button>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+>>>>>>> 2c33890 (Made the pages for the notes)
 export default home;
