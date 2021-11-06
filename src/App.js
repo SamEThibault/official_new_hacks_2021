@@ -37,6 +37,19 @@ function App() {
               <Route path="study" element={<PrivateRoute><NoteUpload /></PrivateRoute>}/>
               <Route path="discussion" element={<PrivateRoute><Discussion /></PrivateRoute>}/>
               {/* <Route path="*" element={<PageNotFound/>} /> */}
+              <Route path="chemistry" element={<Category title="Chemistry" topics={["Organic", "Stoichiometry"]}/>}/>
+              <Route path="physics" element={<Category title="Physics" topics={["Thermodynamics", "Kinematics"]}/>}/>
+              <Route path="biology" element={<Category title="Biology" topics={["Human Body", "Frogs"]}/>}/>
+              <Route path="history" element={<Category title="History" topics={["World War II", "Genocide"]}/>}/>
+              <Route path="organic" element={<TopicNote/>}/>
+              <Route path="stoichiometry" element={<TopicNote/>}/>
+              <Route path="thermodynamics" element={<TopicNote/>}/>
+              <Route path="kinematics" element={<TopicNote/>}/>
+              <Route path="humanbody" element={<TopicNote/>}/>
+              <Route path="frogs" element={<TopicNote/>}/>
+              <Route path="worldwarii" element={<TopicNote/>}/>
+              <Route path="genocide" element={<TopicNote/>}/>
+
             </Routes>
           </AuthProvider>
         </Router>
