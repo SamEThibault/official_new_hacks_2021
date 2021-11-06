@@ -12,7 +12,7 @@ const passwordConfirmRef = useRef()
 const signup = useAuth()
 const [error, setError] = useState('')
 const [loading, setLoading] = useState(false)
-//const history = useNavigate()
+const history = useNavigate()
 
 async function handleSubmit(e){
     e.preventDefault()
@@ -26,7 +26,7 @@ async function handleSubmit(e){
         setError('')
         setLoading(true)
         await signup(emailRef.current.value,passwordRef.current.value)
-        //history.push("/")
+        history("/")
     } catch {
         setError('Failed to create an account')
     }
@@ -37,7 +37,7 @@ async function handleSubmit(e){
 
     return (
         <>
-            <NavSignup/>
+            
             <Card>
                 <Card.Body>
                     <h2 className="text-center mb-4"> Sign Up</h2>
