@@ -41,6 +41,8 @@ function App() {
               <Route path="physics" element={<Category title="Physics" topics={["Thermodynamics", "Kinematics"]}/>}/>
               <Route path="biology" element={<Category title="Biology" topics={["Human Body", "Anatomy"]}/>}/>
               <Route path="history" element={<Category title="History" topics={["World War II", "Genocide"]}/>}/>
+              <Route path="math" element={<Category title="Math" topics={["Algebra", "Derivatives"]}/>}/>
+              <Route path="english" element={<Category title="English" topics={["Shakespeare", "Literary Devices"]}/>}/>
               <Route path="chemistry/organic" element={<TopicNote/>}/>
               <Route path="chemistry/stoichiometry" element={<TopicNote/>}/>
               <Route path="physics/thermodynamics" element={<TopicNote/>}/>
@@ -49,6 +51,10 @@ function App() {
               <Route path="biology/anatomy" element={<TopicNote/>}/>
               <Route path="history/world%20war%20ii" element={<TopicNote/>}/>
               <Route path="history/genocide" element={<TopicNote/>}/>
+              <Route path="math/algebra" element={<TopicNote/>}/>
+              <Route path="math/derivatives" element={<TopicNote/>}/>
+              <Route path="english/shakespeare" element={<TopicNote/>}/>
+              <Route path="english/literary%20devices" element={<TopicNote/>}/>
 
             </Routes>
           </AuthProvider>

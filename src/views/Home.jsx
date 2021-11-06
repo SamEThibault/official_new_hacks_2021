@@ -66,6 +66,22 @@ function Home() {
               </Button>
             </Link>
           </div>
+          <div className="subject-containers">
+            <h1>Math</h1>
+            <Link to="/math" style={{ textDecoration: "none" }}>
+              <Button className={classes.button} variant="contained">
+                Study Notes
+              </Button>
+            </Link>
+          </div>
+          <div className="subject-containers">
+            <h1>English</h1>
+            <Link to="/english" style={{ textDecoration: "none" }}>
+              <Button className={classes.button} variant="contained">
+                Study Notes
+              </Button>
+            </Link>
+          </div>
           {/* <div className="subject-containers">
           <h1>Discussion Board</h1>
           <Link to="/discussion" style={{textDecoration: 'none'}}>
