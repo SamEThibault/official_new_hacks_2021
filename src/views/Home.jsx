@@ -38,7 +38,7 @@ function Home() {
         <div className="subject-containers">
           <h1>Chemistry</h1>
           <Link to="/chemistry" style={{textDecoration: 'none'}}>
-          <Button /*style={{background: qColors.red}}*/  className={classes.button} variant="contained">Study Notes</Button>
+          <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">Study Notes</Button>
           </Link>   
         </div>
         <div className="subject-containers">
