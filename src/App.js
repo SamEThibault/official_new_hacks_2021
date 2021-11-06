@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import './App.css';
 import Home from "./views/Home";
 import Discussion from "./views/Discussion";
-import Signup from "./components/Signup"
 import Nav from "./views/Nav";
 import NoteUpload from "./components/NoteUpload";
 import Category from "./components/Category";
@@ -14,6 +13,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
+import topicNote from "./components/TopicNote"
 
 function App() {
   useEffect(() => {
