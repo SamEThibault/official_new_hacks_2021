@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import firebase from "../firebase/firebase";
 import "../styles/noteUpload.css";
 function NoteUpload(props) {
