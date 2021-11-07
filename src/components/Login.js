@@ -29,7 +29,7 @@ function Login() {
             dispatch(setEmail(emailRef.current.value));
             history("/home")
         } catch {
-            setError('Failed to sign in')
+            setError('Failed to log in')
         }
 
         setLoading(false)
@@ -45,7 +45,7 @@ function Login() {
                     <Form onSubmit={handleSubmit}>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" ref={emailRef} required />
+                            <Form.Control type = "email" ref={emailRef} required />
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>

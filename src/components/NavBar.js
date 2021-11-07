@@ -66,15 +66,13 @@ function NavBar(props) {
   ];
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar} style={{background: qColors.white}}>
+      <AppBar position="fixed" className={classes.appBar} style={{background: qColors.blue}}>
         <Toolbar className={classes.toolbar}>
           <div>
             <Typography
               variant="h4"
-              //className={classes.brandText}
-              //font-family = Helvetica
               display="inline"
-              style={{color: qColors.red,fontWeight: "bold"}}
+              style={{color: qColors.white,fontWeight: "none",fontFamily: 'Nunito'}}
             >
               NoteHack
             </Typography>
@@ -91,8 +89,7 @@ function NavBar(props) {
                     >
                       <Button //Every but logout
                         size="large"
-                        width="100000px"
-                        style={{color: qColors.blue, fontWeight:"bold", width:"300px"}}
+                        style={{color: qColors.white, fontWeight:"none", width:"300px"}}
                         classes={{ text: classes.menuButtonText }}
                       >
                         {element.name}

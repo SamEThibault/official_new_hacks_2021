@@ -32,10 +32,10 @@ function Home() {
   const classes = useStyles();
   return (
     <div className="App">
-      <NavBar />
-      <div className="home-container" style={{ background: qColors.blue }}>
-        <Card className="card-container subject-catelog" style={{ background: qColors.gold }}>
-          <div className="subject-containers">
+      <Nav />
+      <div className="home-container" style={{ background: qColors.dBlue }}>
+        <Card className="card-container subject-catelog" style={{ background: qColors.white, width:'1300px' , height: '650px'}}>
+          <div style={{borderColor: qColors.gold}} className="subject-containers">
             <h1>Chemistry</h1>
             <Link to="/chemistry" style={{ textDecoration: "none" }}>
               <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">

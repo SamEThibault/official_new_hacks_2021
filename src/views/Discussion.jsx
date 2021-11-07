@@ -1,39 +1,65 @@
-import React from "react";
-import Button from "@mui/material/Button";
-import "../styles/discussion.css";
-import Nav from "../views/Nav";
+import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import '../styles/discussion.css';
+import Card from '@material-ui/core/Card';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
+import NavBar from "../components/NavBar"
 
 function Discussion() {
+
+  const [input, setInput] = useState('')
+  const [print, setPrint] = useState(false)
+
   return (
-    <div className="DiscussionMain">
-      <Nav />
-      <div className="NewPostBtn">
-        <h1>Discussion Board</h1>
+    <div
+      style={{
+        marginTop: '100px'
+      }} className="DiscussionStyle">
+      <NavBar />
+      <h1 className="Header">Discussion Board</h1>
+
+      <div className="DiscussionInput">
+        <TextField
+          value={input}
+          onInput={e => setInput(e.target.value)}
+          style={{ width: '700px' }}
+          className="TxtBox"
+          variant="outlined"
+          color="secondary"
+          id="outlined-multiline-flexible"
+          label="Enter your message here:"
+          multiline
+          maxRows={6}></TextField>
+
         <Button
-          variant="contained"
+          onClick={() => setPrint(true)}
           style={{
-            background: "#1f3a60",
-            height: "90%",
-            width: "90%",
+            background: '#edb220',
+            marginTop: '0px',
+            marginRight: '-40px',
+            height: '55px'
           }}
-        >
-          Post Message
-        </Button>
+          className="btn" variant="contained">Post Message</Button>
       </div>
 
-      <div className="TextBox">
-        <textarea
-          style={{
-            position: "fixed",
-            top: 230,
-            width: 600,
-            height: 300,
-            left: 10,
-          }}
-        >
-          Type your message here...{" "}
-        </textarea>
-      </div>
+      <h2
+        style={{
+          marginTop: '50px',
+        }}
+        className="PostsHeader" >View Posts:</h2>
+
+      <Grid container>
+        <Grid item md={12}>
+          <Card>
+            {print ?
+              <h3>{input}</h3>
+              : null}
+          </Card>
+        </Grid>
+
+      </Grid>
     </div>
   );
 }
