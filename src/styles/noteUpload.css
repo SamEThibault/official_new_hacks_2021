@@ -1,0 +1,29 @@
+.upload-container{
+    padding: 4rem 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    min-width: 500px;
+    min-height: 700px;
+    background-color: darkred;
+    background: rgba(0,0,0.0.6)
+}
+.note-taker-input{
+    text-align: center;
+    margin:2rem 0;
+    padding: 1rem;
+}
+.upload-title{
+    color:white;
+}
+.upload-button{
+    padding: .5rem 1rem;
+}
+.submit-notes{
+    padding:0.5rem 1rem;
+}

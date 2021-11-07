@@ -1,0 +1,37 @@
+.topic-note-container {
+  min-height: 100vh;
+  position: relative;
+}
+.note-taker-container {
+  border: solid 1px "#ac2b37";
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.note-taker-info {
+  width: 90%;
+}
+.note-taker-notes {
+  max-height: 600px;
+  border: solid 1px black;
+}
+.note-taker-name {
+  text-align: center;
+}
+.note-pdf {
+  width: 100%;
+  min-height: 600px;
+}
+.new-note-icon {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
