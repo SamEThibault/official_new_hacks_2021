@@ -1,3 +1,7 @@
+p{
+    margin-bottom:0 !important;
+    padding: 0;
+}
 .upload-container{
     padding: 4rem 0;
     display:flex;
@@ -10,20 +14,55 @@
     transform: translate(-50%, -50%);
     min-width: 500px;
     min-height: 700px;
-    background-color: darkred;
-    background: rgba(0,0,0.0.6)
+    background-color: #1f3a60;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .note-taker-input{
     text-align: center;
     margin:2rem 0;
     padding: 1rem;
+    width:100%;
+    border-radius: .5rem;
+}
+.note-taker-info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .upload-title{
     color:white;
 }
 .upload-button{
-    padding: .5rem 1rem;
+    padding:  1rem;
+    width:100%;
+    border:none;
+    border-radius: .5rem;
+    background-color: white;
 }
 .submit-notes{
     padding:0.5rem 1rem;
+}
+.file-upload-container{
+    margin: 2rem 4rem;
+    width:100%;
+    display:flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+.file-name{
+    color:white;
+}
+.delete-upload{
+    border:none;
+    background:transparent;
+    color:white;
+}
+.submit-notes{
+    border:none;
+    background:#ac2b37;
+    color:white;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
 }

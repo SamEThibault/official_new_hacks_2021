@@ -2,12 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   email: "",
-  bioNotes: [],
-  calcNotes: [],
-  chemNotes: [],
-  econNotes: [],
-  histNotes: [],
-  physNotes: [],
+  newNote: false,
+  allNotes: [],
 };
 
 const noteDataSlice = createSlice({
@@ -19,36 +15,17 @@ const noteDataSlice = createSlice({
     setEmail: (state, action)=>{
        state.email = action.payload;
     },
-    // Set Subject Topic Notes
-    setBioNotes: (state, action) => {
-       state.bioNotes= action.payload;
+    setAllNotes:(state, action)=>{
+       state.allNotes = action.payload;
     },
-    setCalcNotes: (state, action) => {
-       state.calcNotes= action.payload;
-    },
-    setChemNotes: (state, action) => {
-       state.bioNotes= action.payload;
-    },
-    setEconNotes: (state, action) => {
-       state.bioNotes= action.payload;
-    },
-    setHistNotes: (state, action) => {
-       state.bioNotes= action.payload;
-    },
-    setPhysNotes: (state, action) => {
-       state.bioNotes= action.payload;
-    },
-    
+    setNewNote:(state,action)=>{
+      state.newNote = action.payload;
+    }
   },
 });
 
-export const {setBioNotes, setCalcNotes, setChemNotes, setEconNotes, setHistNotes, setPhysNotes, setEmail} = noteDataSlice.actions;
+export const {setEmail, setAllNotes, setNewNote} = noteDataSlice.actions;
+export const selectNewNote = (state) =>state.noteData.newNote;
 export const selectEmail = (state) => state.noteData.email;
-export const selectBioNotes = (state) => state.noteData.bioNotes;
-export const selectCalcNotes = (state) => state.noteData.calcNotes;
-export const selectChemNotes = (state) => state.noteData.chemNotes;
-export const selectEconNotes = (state) => state.noteData.econNotes;
-export const selectHistNotes = (state) => state.noteData.histNotes;
-export const selectPhysNotes = (state) => state.noteData.physNotes;
-
+export const selectAllNotes = (state) => state.noteData.allNotes;
 export default noteDataSlice.reducer;
