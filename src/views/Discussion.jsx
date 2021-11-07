@@ -54,12 +54,13 @@ function Discussion() {
     // }
 
     return (
-        <div className="DiscussionStyle">
-            <h1 className="Header">Discussion Board</h1>
+        <div>
+            <h1 style={{textAlign: "left"}} className="Header">Discussion Board</h1>
 
-            <div className="DiscussionInput">
+            <div  className="DiscussionInput">
                 <TextField className="TxtBox"
                     // Onchange={getData}
+
                     variant="outlined"
                     color="secondary"
                     id="outlined-multiline-flexible"

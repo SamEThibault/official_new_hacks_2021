@@ -11,7 +11,7 @@ function Signup() {
     const { signup, currentUser } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
-    const history = useNavigate()
+    //const history = useNavigate()
 
     async function handleSubmit(e) {
         e.preventDefault()
@@ -24,7 +24,7 @@ function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            history("/home")
+            //history("/home")
         } catch {
             setError('Failed to create an account')
         }
