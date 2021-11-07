@@ -14,7 +14,6 @@ import Login from './components/Login'
 import Dashboard from './components/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
 import topicNote from "./components/TopicNote"
-import Signup from './components/Signup'
 import Category from "./components/Category";
 import firebase from "./firebase/firebase"
 function App() {
