@@ -33,9 +33,9 @@ function Home() {
   return (
     <div className="App">
       <Nav />
-      <div className="home-container" style={{ background: qColors.blue }}>
+      <div className="home-container" style={{ background: qColors.dBlue }}>
         <Card className="card-container subject-catelog" style={{ background: qColors.white, width:'1300px' , height: '650px'}}>
-          <div className="subject-containers">
+          <div style={{borderColor: qColors.gold}} className="subject-containers">
             <h1>Chemistry</h1>
             <Link to="/chemistry" style={{ textDecoration: "none" }}>
               <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">
