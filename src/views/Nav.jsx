@@ -136,7 +136,7 @@ function Nav(props) {
   ];
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar} style={{background: qColors.blue}}>
+      <AppBar position="relative" className={classes.appBar} style={{background: qColors.blue}}>
         <Toolbar className={classes.toolbar}>
           <div>
             <Typography
