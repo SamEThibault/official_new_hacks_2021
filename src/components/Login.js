@@ -38,7 +38,7 @@ async function handleSubmit(e){
                     <Form onSubmit = {handleSubmit}>
                         <Form.Group id="email">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type = "email" ref={emailRef} required />
+                            <Form.Control type = "email" placeholder="john.smith@gmail.com" style={{textAlign: 'center'}} ref={emailRef} required />
                         </Form.Group>
                         <Form.Group id="password">
                             <Form.Label>Password</Form.Label>
