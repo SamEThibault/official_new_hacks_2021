@@ -29,7 +29,7 @@ function Login() {
             dispatch(setEmail(emailRef.current.value));
             history("/home")
         } catch {
-            setError('Failed to sign in')
+            setError('Failed to log in')
         }
 
         setLoading(false)

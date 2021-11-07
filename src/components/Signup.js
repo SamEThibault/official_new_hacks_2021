@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 function Signup() {
 
-    //const navigate = useNavigate()
+    const navigate = useNavigate()
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -25,7 +25,7 @@ function Signup() {
             setError('')
             setLoading(true)
             await signup(emailRef.current.value, passwordRef.current.value)
-            //history("/home")
+            navigate("/home")
         } catch {
             setError('Failed to create an account')
         }
