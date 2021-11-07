@@ -1,4 +1,4 @@
-.DiscussionStyle{
+/* .DiscussionStyle{
     Height: 100% !important;
     Width: 100% !important;
     padding: 5;
@@ -21,12 +21,12 @@
 }
 
 .btn{
-    background: #edb220 !important;
-   margin-top: -21% !important;
-   margin-right: 50% !important;
+    background: #edb220;
+   margin-top: -21%;
+   margin-right: 50%;
 }
 
 .TxtBox{
     width: 200% !important;
     margin-left: -50% !important;
-}
+} */

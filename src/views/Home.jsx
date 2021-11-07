@@ -5,10 +5,10 @@ import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { qColors } from "../styles/colors.js";
 import Nav from "./Nav";
+import NavBar from "../components/NavBar"
 import { makeStyles, ThemeProvider, createTheme } from "@material-ui/core";
 
 const useStyles = makeStyles({
-
   button: {
     backgroundColor: qColors.red,
     textDecoration: "none",
@@ -19,7 +19,6 @@ const useStyles = makeStyles({
       textDecoration: "none",
       color: qColors.red,
       fontWeight: "bold",
-
     },
     "&:active": {
       background: qColors.red,
@@ -33,7 +32,7 @@ function Home() {
   const classes = useStyles();
   return (
     <div className="App">
-      <Nav />
+      <NavBar />
       <div className="home-container" style={{ background: qColors.blue }}>
         <Card className="card-container subject-catelog" style={{ background: qColors.gold }}>
           <div className="subject-containers">
@@ -63,6 +62,22 @@ function Home() {
           <div className="subject-containers">
             <h1>History</h1>
             <Link to="/history" style={{ textDecoration: "none" }}>
+              <Button className={classes.button} variant="contained">
+                Study Notes
+              </Button>
+            </Link>
+          </div>
+          <div className="subject-containers">
+            <h1>Math</h1>
+            <Link to="/math" style={{ textDecoration: "none" }}>
+              <Button className={classes.button} variant="contained">
+                Study Notes
+              </Button>
+            </Link>
+          </div>
+          <div className="subject-containers">
+            <h1>English</h1>
+            <Link to="/english" style={{ textDecoration: "none" }}>
               <Button className={classes.button} variant="contained">
                 Study Notes
               </Button>
