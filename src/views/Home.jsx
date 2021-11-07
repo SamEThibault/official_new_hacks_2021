@@ -38,7 +38,7 @@ function Home() {
           <div style={{borderColor: qColors.gold}} className="subject-containers">
             <h1>Chemistry</h1>
             <Link to="/chemistry" style={{ textDecoration: "none" }}>
-              <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -46,7 +46,7 @@ function Home() {
           <div className="subject-containers">
             <h1>Physics</h1>
             <Link to="/physics" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -54,7 +54,7 @@ function Home() {
           <div className="subject-containers">
             <h1>Biology</h1>
             <Link to="/biology" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -62,7 +62,7 @@ function Home() {
           <div className="subject-containers">
             <h1>History</h1>
             <Link to="/history" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -70,7 +70,7 @@ function Home() {
           <div className="subject-containers">
             <h1>Math</h1>
             <Link to="/math" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -78,7 +78,7 @@ function Home() {
           <div className="subject-containers">
             <h1>English</h1>
             <Link to="/english" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
