@@ -20,46 +20,46 @@ import NavBar from "./components/NavBar"
 function App() {
 
   const notedb = firebase.firestore().collection("Notes");
-  
+
   useEffect(() => {
 
   }, [])
   return (
     <div className="App">
-        <Router>
-          <AuthProvider>
-            <Routes>
-              <Route exact path="/" element={<PrivateRoute><Home /></PrivateRoute>}/>
-              <Route exact path="*" element={<PrivateRoute><Home /></PrivateRoute>}/>
-              <Route exact path ="signup" element={<Signup />}/>
-              <Route exact path ="login" element={<Login />}/>
-              <Route exact path="home" element={<PrivateRoute><Home /></PrivateRoute>}/>
-              <Route path="study" element={<PrivateRoute><NoteUpload /></PrivateRoute>}/>
-              <Route exact path="discussion" element={<PrivateRoute><Discussion /></PrivateRoute>}/>
-              {/* <Route path="*" element={<PageNotFound/>} /> */}
-              <Route path="chemistry" element={<PrivateRoute><Category title="Chemistry" topics={["Organic", "Stoichiometry"]}/></PrivateRoute>}/>
-              <Route path="physics" element={<PrivateRoute><Category title="Physics" topics={["Thermodynamics", "Kinematics"]}/></PrivateRoute>}/>
-              <Route path="biology" element={<PrivateRoute><Category title="Biology" topics={["Human Body", "Anatomy"]}/></PrivateRoute>}/>
-              <Route path="history" element={<PrivateRoute><Category title="History" topics={["World War II", "Genocide"]}/></PrivateRoute>}/>
-              <Route path="math" element={<PrivateRoute><Category title="Math" topics={["Algebra", "Derivatives"]}/></PrivateRoute>}/>
-              <Route path="english" element={<PrivateRoute><Category title="English" topics={["Shakespeare", "Literary Devices"]}/></PrivateRoute>}/>
-              <Route path="chemistry/organic" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="chemistry/stoichiometry" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="physics/thermodynamics" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="physics/kinematics" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="biology/human%20body" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="biology/anatomy" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="history/world%20war%20ii" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="history/genocide" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="math/algebra" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="math/derivatives" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="english/shakespeare" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
-              <Route path="english/literary%20devices" element={<PrivateRoute><TopicNote/></PrivateRoute>}/>
+      <Router>
+        <AuthProvider>
+          <Routes>
+            <Route exact path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+            <Route exact path="*" element={<PrivateRoute><Home /></PrivateRoute>} />
+            <Route exact path="signup" element={<Signup />} />
+            <Route exact path="login" element={<Login />} />
+            <Route exact path="home" element={<PrivateRoute><Home /></PrivateRoute>} />
+            <Route path="study" element={<PrivateRoute><NoteUpload /></PrivateRoute>} />
+            <Route exact path="discussion" element={<PrivateRoute><Discussion /></PrivateRoute>} />
+            {/* <Route path="*" element={<PageNotFound/>} /> */}
+            <Route path="chemistry" element={<PrivateRoute><Category title="Chemistry" topics={["Organic", "Stoichiometry"]} /></PrivateRoute>} />
+            <Route path="physics" element={<PrivateRoute><Category title="Physics" topics={["Thermodynamics", "Kinematics"]} /></PrivateRoute>} />
+            <Route path="biology" element={<PrivateRoute><Category title="Biology" topics={["Human Body", "Anatomy"]} /></PrivateRoute>} />
+            <Route path="history" element={<PrivateRoute><Category title="History" topics={["World War II", "Genocide"]} /></PrivateRoute>} />
+            <Route path="math" element={<PrivateRoute><Category title="Math" topics={["Algebra", "Derivatives"]} /></PrivateRoute>} />
+            <Route path="english" element={<PrivateRoute><Category title="English" topics={["Shakespeare", "Literary Devices"]} /></PrivateRoute>} />
+            <Route path="chemistry/organic" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="chemistry/stoichiometry" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="physics/thermodynamics" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="physics/kinematics" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="biology/human%20body" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="biology/anatomy" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="history/world%20war%20ii" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="history/genocide" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="math/algebra" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="math/derivatives" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="english/shakespeare" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
+            <Route path="english/literary%20devices" element={<PrivateRoute><TopicNote /></PrivateRoute>} />
 
-            </Routes>
-          </AuthProvider>
-        </Router>
-      </div>
+          </Routes>
+        </AuthProvider>
+      </Router>
+    </div>
 
     // </Container>
   );
