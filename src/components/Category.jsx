@@ -35,7 +35,7 @@ function Category(props) {
     <div className="category-container" style={{background: qColors.dBlue}}>
       <Nav/>
       <div className="container">
-        <h1 style={{color: 'white', marginTop: 20}}>{props.title}</h1>
+        <h1 style={{color: 'white',margin:"4rem 0 6rem 0", color: "#ffc300"}}>{props.title}</h1>
         <div className="topics-container">
           {props.topics.map((topic) => (
             <div className="topic-container">
