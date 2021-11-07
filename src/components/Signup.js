@@ -5,13 +5,14 @@ import { Link, useNavigate } from 'react-router-dom'
 
 function Signup() {
 
+    //const navigate = useNavigate()
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
     const { signup, currentUser } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
-    //const history = useNavigate()
+    
 
     async function handleSubmit(e) {
         e.preventDefault()
