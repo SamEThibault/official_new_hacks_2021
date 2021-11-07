@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 function Category(props) {
   const classes = useStyles()
   return (
-    <div className="category-container" style={{background: qColors.blue}}>
+    <div className="category-container" style={{background: qColors.dBlue}}>
       <Nav/>
       <div className="container">
         <h1 style={{color: 'white', marginTop: 20}}>{props.title}</h1>
