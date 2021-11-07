@@ -35,6 +35,7 @@ function Discussion() {
 
         <Button
           onClick={() => setPrint(true)}
+
           style={{
             background: '#edb220',
             marginTop: '0px',
@@ -47,14 +48,19 @@ function Discussion() {
       <h2
         style={{
           marginTop: '50px',
+          textAlign: 'left',
+          marginLeft: '20px'
         }}
         className="PostsHeader" >View Posts:</h2>
 
       <Grid container>
-        <Grid item md={12}>
-          <Card>
+        <Grid item md={6}>
+          <Card style=
+            {{
+              marginLeft: '20px'
+            }}>
             {print ?
-              <h3>{input}</h3>
+              <h6>{input}</h6>
               : null}
           </Card>
         </Grid>

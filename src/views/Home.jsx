@@ -49,7 +49,7 @@ function Home() {
               <GoBeaker />
             </h2>
             <Link to="/chemistry" style={{ textDecoration: "none" }}>
-              <Button /*style={{background: qColors.red}}*/ className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -60,7 +60,7 @@ function Home() {
               <BiAtom />
             </h2>
             <Link to="/physics" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -71,7 +71,7 @@ function Home() {
               <BiDna />
             </h2>
             <Link to="/biology" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -82,7 +82,7 @@ function Home() {
               <ImBooks />
             </h2>
             <Link to="/history" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -93,7 +93,7 @@ function Home() {
               <AiFillCalculator />
             </h2>
             <Link to="/math" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
@@ -104,7 +104,7 @@ function Home() {
               <HiPencilAlt />
             </h2>
             <Link to="/english" style={{ textDecoration: "none" }}>
-              <Button className={classes.button} variant="contained">
+              <Button style={{fontWeight: "bold"}} className={classes.button} variant="contained">
                 Study Notes
               </Button>
             </Link>
