@@ -41,7 +41,7 @@ function Home() {
       <div className="home-container" style={{ background: qColors.dBlue }}>
         <Card
           className="card-container subject-catelog"
-          style={{ background: qColors.white, width: "1300px", height: "650px" }}
+          style={{ background: 'white', width: "1300px", height: "650px" }}
         >
           <div style={{ borderColor: qColors.gold }} className="subject-containers">
             <h1>Chemistry</h1>
