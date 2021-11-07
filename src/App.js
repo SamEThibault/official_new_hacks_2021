@@ -16,6 +16,7 @@ import PrivateRoute from './components/PrivateRoute'
 import topicNote from "./components/TopicNote"
 import Category from "./components/Category";
 import firebase from "./firebase/firebase"
+import NavBar from "./components/NavBar"
 function App() {
 
   const notedb = firebase.firestore().collection("Notes");
@@ -24,9 +25,7 @@ function App() {
 
   }, [])
   return (
-    <Container className = "d-flex align-itmes-center justify-content-center"
-      style ={{minheight: "100vh"}}>
-      <div className = "w-100" style={{maxWidth: '400px '}}>
+    <div className="App">
         <Router>
           <AuthProvider>
             <Routes>
