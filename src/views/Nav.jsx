@@ -136,7 +136,7 @@ function Nav(props) {
   ];
   return (
     <div className={classes.root}>
-      <AppBar position="fixed" className={classes.appBar} style={{background: qColors.white}}>
+      <AppBar position="relative" className={classes.appBar} style={{background: qColors.blue}}>
         <Toolbar className={classes.toolbar}>
           <div>
             <Typography
@@ -144,7 +144,7 @@ function Nav(props) {
               //className={classes.brandText}
               //font-family = Helvetica
               display="inline"
-              style={{color: qColors.red,fontWeight: "bold"}}
+              style={{color: qColors.white,fontWeight: "none",fontFamily: 'Nunito'}}
             >
               NoteHack
             </Typography>
@@ -161,8 +161,7 @@ function Nav(props) {
                     >
                       <Button //Every but logout
                         size="large"
-                        width="100000px"
-                        style={{color: qColors.blue, fontWeight:"bold", width:"300px"}}
+                        style={{color: qColors.white, fontWeight:"none", fontStyle:"none", width:"300px"}}
                         classes={{ text: classes.menuButtonText }}
                       >
                         {element.name}

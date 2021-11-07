@@ -32,15 +32,15 @@ const useStyles = makeStyles({
 function Category(props) {
   const classes = useStyles()
   return (
-    <div className="category-container">
+    <div className="category-container" style={{background: qColors.blue}}>
       <Nav/>
       <div className="container">
-        <h1>{props.title}</h1>
+        <h1 style={{color: 'white', marginTop: 20}}>{props.title}</h1>
         <div className="topics-container">
           {props.topics.map((topic) => (
             <div className="topic-container">
               <Link style={{textDecoration: 'none'}} to={topic.toLowerCase()}>
-              <Button style={{fontWeight: 'bold'}} className={classes.button}>{topic}</Button>
+              <Button size="large" style={{fontWeight: 'bold', color: 'white'}} /*className={classes.button}*/>{topic}</Button>
               </Link>
               </div>
           ))}
