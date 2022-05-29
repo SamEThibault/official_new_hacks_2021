@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+## Inspiration
+- With the goal of creating a truly useful product, we met up to reflect on areas of struggle in our own lives.
+- We noticed that our faculty had trouble recruiting student note takers to help students with accommodations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+- We decided to create an app that allows students to share their electronic notes with whoever might need them.
 
-## Available Scripts
+## How we built it
+- We built the web application using React, Firebase and Redux
+- The frontend was created with React
+- The serverless backend was Firebase
+- Redux was used to manage the state of all of the components
 
-In the project directory, you can run:
+## Challenges we ran into
+- We faced a steep learning curve since most of us have never used ReactJs nor collaborated on Github.
+- Material UI uses CSS files to format their objects to specific standards, it took a lot of playing around to format boxes and cards the way we needed them to look.
+- Collaborating on GitHub posed challenges since we used many additional packages so the JSON file would be drastically different for each branch.
 
-### `npm start`
+## Accomplishments that we're proud of
+- We are proud that we were able to learn a bunch of new technologies and skills about web development in such a short amount of time.
+- We are proud that we were effective and efficient as a team in terms of communication and collaboration.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## What we learned
+- We learned technologies such as React, Git, Github, Redux, Firebase, and NPM 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for NoteHacks
+- We plan on making the product more refined in terms of security, the discussion board, and improving the overall design and functionality.
